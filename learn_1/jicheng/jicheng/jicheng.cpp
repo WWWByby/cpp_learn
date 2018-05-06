@@ -1,11 +1,27 @@
-// jicheng.cpp : ¶¨Òå¿ØÖÆÌ¨Ó¦ÓÃ³ÌĞòµÄÈë¿Úµã¡£
+ï»¿// jicheng.cpp : å®šä¹‰æ§åˆ¶å°åº”ç”¨ç¨‹åºçš„å…¥å£ç‚¹ã€‚
 //
 
 #include "stdafx.h"
+#include "BaseMonster.h"
+#include <string>
+#include <locale>
+#include "Human.h"
+#include "Giant.h"
 
+using namespace std;
 
 int main()
 {
+	string name = "azh";
+	
+	Giant monster(name);
+	Human monster2("wjh");
+	
+	for (int i = 0; i < 10; i++)
+	{
+		monster.Attack(&monster2);
+		monster2.Attack(&monster);
+	}
     return 0;
 }
 

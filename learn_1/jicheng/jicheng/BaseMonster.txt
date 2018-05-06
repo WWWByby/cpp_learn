@@ -1,0 +1,40 @@
+#include "stdafx.h"
+#include "BaseMonster.h"
+#include <iostream>
+#include <string>
+#include <locale>
+using namespace std;
+
+
+
+BaseMonster::BaseMonster(string _name)
+{
+	this->name = _name;
+
+	Born();
+}
+
+BaseMonster::~BaseMonster()
+{
+
+}
+
+void BaseMonster::Hert(BaseMonster * target)
+{
+	cout << this->name + "������" << endl;
+}
+
+void BaseMonster::Attack(BaseMonster * target)
+{
+	cout << this->name + "������" + target->name << endl;
+}
+
+void BaseMonster::Dead()
+{
+	cout << this->name + "Dead"<<endl;
+}
+
+void BaseMonster::Born()
+{
+	printf("%s  is born \n", this->name);
+}

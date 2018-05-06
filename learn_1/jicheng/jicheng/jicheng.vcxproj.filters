@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="头文件\IView">
+      <UniqueIdentifier>{9fdeaf0c-837a-4a64-bab3-6c7eee4e83ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\IView">
+      <UniqueIdentifier>{b271f8a8-7e46-4ca5-a980-4ac428ed4637}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -24,12 +30,30 @@
     <ClInclude Include="targetver.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="BaseMonster.h">
+      <Filter>头文件\IView</Filter>
+    </ClInclude>
+    <ClInclude Include="Human.h">
+      <Filter>头文件\IView</Filter>
+    </ClInclude>
+    <ClInclude Include="Giant.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="jicheng.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseMonster.cpp">
+      <Filter>源文件\IView</Filter>
+    </ClCompile>
+    <ClCompile Include="Human.cpp">
+      <Filter>源文件\IView</Filter>
+    </ClCompile>
+    <ClCompile Include="Giant.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
