@@ -16,7 +16,7 @@
 *.dylib
 *.dll
 *.opendb
-
+*.sln
 # Fortran module files
 *.mod
 *.smod
