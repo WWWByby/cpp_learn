@@ -11,7 +11,17 @@ struct manStrct
 		name = "未初始化";
 		price = 0;
 	}
+	manStrct(string _name)
+	{
+		name = _name;
+		price = 0;
+	}
+	manStrct(string _name,int price)
+	{
+		name = _name;
 
+		this->price = price;
+	}
 	friend ostream & operator<< (ostream &out ,manStrct  &str)
 	{
 		out << "名字：" << str.name << "price："<<str.price << std::endl;
@@ -19,10 +29,12 @@ struct manStrct
 	}
 };
 
+
+
 void test_struct()
 {
 	std::cout << "测试结构体" << std::endl;
-	manStrct man;
+	manStrct man = {"test",100};
 	
 	cout << man <<endl;
 
